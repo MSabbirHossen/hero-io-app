@@ -107,15 +107,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {topApps.map((app) => (
-              <AppCard key={app.id} app={app} />
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default HomePage;

@@ -94,8 +94,6 @@ const AllAppsPage = () => {
             >
               Clear Search
             </button>
-              Try searching with different keywords
-            </p>
           </div>
         )}
       </div>
