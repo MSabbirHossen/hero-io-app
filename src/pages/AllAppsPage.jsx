@@ -21,19 +21,21 @@ const AllAppsPage = () => {
   }, [searchTerm, sortOrder]);
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 via-blue-50 to-purple-50 min-h-screen py-16">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-indigo-50 to-purple-50 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
         {/* Title Section */}
-        <div className="mb-12 text-center md:text-left">
-          <h1 className="text-6xl font-bold mb-2 text-gray-900">All Apps</h1>
-          <p className="text-xl text-gray-600">
+        <div className="mb-8 sm:mb-12 text-center md:text-left">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 text-gray-900">
+            All Apps
+          </h1>
+          <p className="text-base sm:text-lg text-gray-600">
             Discover all available applications and find your favorites
           </p>
         </div>
 
         {/* Search and Sort Section */}
-        <div className="bg-white rounded-2xl shadow-lg p-6 mb-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+        <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-8 sm:mb-12 border border-gray-100">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 items-end">
             <div className="md:col-span-2">
               <label className="block text-sm font-semibold text-gray-700 mb-2">
                 🔍 Search Apps
@@ -41,7 +43,7 @@ const AllAppsPage = () => {
               <input
                 type="text"
                 placeholder="Type app name..."
-                className="input input-bordered w-full h-12 border-2 border-gray-200 focus:border-primary focus:outline-none rounded-xl transition-all duration-300"
+                className="w-full px-4 py-2.5 sm:py-3 border-2 border-gray-200 focus:border-indigo-500 focus:outline-none rounded-lg transition-all duration-300"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -52,7 +54,7 @@ const AllAppsPage = () => {
                 📊 Sort By
               </label>
               <select
-                className="select select-bordered w-full h-12 border-2 border-gray-200 focus:border-primary rounded-xl transition-all duration-300"
+                className="w-full px-4 py-2.5 sm:py-3 border-2 border-gray-200 focus:border-indigo-500 focus:outline-none rounded-lg transition-all duration-300 bg-white"
                 value={sortOrder}
                 onChange={(e) => setSortOrder(e.target.value)}
               >
@@ -65,14 +67,20 @@ const AllAppsPage = () => {
 
           <div className="mt-4 flex items-center justify-between">
             <p className="text-sm text-gray-600 font-medium">
-              Showing <span className="text-primary font-bold">{filteredApps.length}</span> of <span className="text-gray-800 font-bold">{appsData.length}</span> apps
+              Showing{" "}
+              <span className="text-indigo-600 font-bold">
+                {filteredApps.length}
+              </span>{" "}
+              of{" "}
+              <span className="text-gray-800 font-bold">{appsData.length}</span>{" "}
+              apps
             </p>
           </div>
         </div>
 
         {/* Apps Grid */}
         {filteredApps.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-in fade-in">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 animate-in fade-in">
             {filteredApps.map((app, idx) => (
               <div
                 key={app.id}
@@ -84,10 +92,16 @@ const AllAppsPage = () => {
             ))}
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center min-h-96 bg-white rounded-2xl shadow-lg">
-            <div className="text-8xl mb-6 animate-bounce">🔍</div>
-            <h2 className="text-4xl font-bold mb-3 text-gray-800">No Apps Found</h2>
-            <p className="text-gray-600 text-lg mb-6">Try searching with different keywords</p>
+          <div className="flex flex-col items-center justify-center min-h-80 sm:min-h-96 bg-white rounded-xl shadow-lg border border-gray-100">
+            <div className="text-6xl sm:text-7xl lg:text-8xl mb-4 sm:mb-6 animate-bounce">
+              🔍
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 text-gray-800">
+              No Apps Found
+            </h2>
+            <p className="text-gray-600 text-base sm:text-lg text-center px-4">
+              Try searching with different keywords
+            </p>
             <button
               className="btn btn-primary btn-lg"
               onClick={() => setSearchTerm("")}

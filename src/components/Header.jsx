@@ -14,90 +14,85 @@ const Header = () => {
   ];
 
   return (
-    <header className="navbar bg-gradient-to-r from-primary via-purple-500 to-pink-500 shadow-lg sticky top-0 z-50 backdrop-blur-md">
-      <div className="navbar-start">
-        <Link
-          to="/"
-          className="btn btn-ghost text-2xl md:text-3xl font-bold text-white hover:bg-white/20 transition-all duration-300"
-        >
-          🦸‍♂️ Hero IO
-        </Link>
-      </div>
+    <header className="sticky top-0 z-40 backdrop-blur-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 shadow-xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="p-2 bg-white/20 rounded-lg group-hover:bg-white/30 transition-all duration-300">
+              <span className="text-2xl">🚀</span>
+            </div>
+            <span className="text-xl sm:text-2xl font-bold text-white hidden sm:inline">
+              Hero IO
+            </span>
+            <span className="text-lg sm:text-xl font-bold text-white sm:hidden">
+              HIO
+            </span>
+          </Link>
 
-      {/* Desktop Menu */}
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal gap-2">
-          {navItems.map((item) => (
-            <li key={item.path}>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+            {navItems.map((item) => (
               <Link
+                key={item.path}
                 to={item.path}
-                className={`text-white font-semibold px-4 py-2 rounded-lg transition-all duration-300 ${
+                className={`font-medium transition-all duration-300 pb-2 border-b-2 ${
                   isActive(item.path)
-                    ? "bg-white/30 shadow-lg scale-105"
-                    : "hover:bg-white/20"
+                    ? "text-white border-b-white"
+                    : "text-white/80 border-b-transparent hover:text-white hover:border-b-white/50"
                 }`}
               >
                 {item.label}
               </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Mobile Menu Toggle */}
-      <div className="navbar-end gap-2">
-        <button
-          className="btn btn-ghost text-white lg:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-light btn-sm md:btn-md font-semibold hover:scale-105 transition-transform duration-300"
-        >
-          Contribution
-        </a>
-      </div>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-gradient-to-b from-primary to-secondary shadow-lg lg:hidden animate-in">
-          <ul className="menu w-full gap-2 p-4">
-            {navItems.map((item) => (
-              <li key={item.path}>
-                <Link
-                  to={item.path}
-                  className={`text-white font-semibold rounded-lg transition-all duration-300 ${
-                    isActive(item.path)
-                      ? "bg-white/30 shadow-lg"
-                      : "hover:bg-white/20"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              </li>
             ))}
-          </ul>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white p-2 hover:bg-white/20 rounded-lg transition-all duration-300"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={
+                  isMenuOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
+                }
+              />
+            </svg>
+          </button>
         </div>
-      )}
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 space-y-3 border-t border-white/20 pt-4 animate-slideInDown">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsMenuOpen(false)}
+                className={`block px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                  isActive(item.path)
+                    ? "bg-white/20 text-white"
+                    : "text-white/80 hover:bg-white/10 hover:text-white"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
     </header>
   );
 };
