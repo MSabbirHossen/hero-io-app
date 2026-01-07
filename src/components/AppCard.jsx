@@ -24,7 +24,8 @@ const AppCard = ({ app }) => {
             isHovered ? "scale-110" : "scale-100"
           }`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        </div> */}
       </figure>
 
       <div className="p-4 space-y-3">
@@ -37,7 +38,7 @@ const AppCard = ({ app }) => {
           </p>
         </div>
 
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+        {/* <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div> */}
 
         <div className="space-y-3">
           <div className="flex justify-between items-center gap-2">

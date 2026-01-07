@@ -2,7 +2,7 @@ export const appsData = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5zdGFncmFtJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D",
     title: "Instagram",
     companyName: "Meta Platforms",
     description:
@@ -22,7 +22,7 @@ export const appsData = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1658497082000-b8c4d46addc9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8V2hhdHNBcHAlMjBsb2dvfGVufDB8fDB8fHww",
     title: "WhatsApp",
     companyName: "Meta Platforms",
     description:
@@ -42,7 +42,7 @@ export const appsData = [
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGluc3RhZ3JhbSUyMGxvZ298ZW58MHx8MHx8fDA%3D",
     title: "TikTok",
     companyName: "ByteDance",
     description:
@@ -62,7 +62,7 @@ export const appsData = [
   {
     id: 4,
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f70570ce0?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1678329885908-85eb768aa61b?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "YouTube",
     companyName: "Google",
     description:
@@ -82,7 +82,7 @@ export const appsData = [
   {
     id: 5,
     image:
-      "https://images.unsplash.com/photo-1614635150007-f179f623155d?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1658489958427-325ded050829?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U3BvdGlmeSUyMGxvZ298ZW58MHx8MHx8fDA%3D",
     title: "Spotify",
     companyName: "Spotify AB",
     description:
@@ -102,7 +102,7 @@ export const appsData = [
   {
     id: 6,
     image:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1717295248299-74c084c31184?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TmV0ZmxpeCUyMGxvZ298ZW58MHx8MHx8fDA%3D",
     title: "Netflix",
     companyName: "Netflix Inc.",
     description:
@@ -122,7 +122,7 @@ export const appsData = [
   {
     id: 7,
     image:
-      "https://images.unsplash.com/photo-1612199188060-c36caf9e4835?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1657947953120-6e5201f3b3ed?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VWJlciUyMGxvZ298ZW58MHx8MHx8fDA%3D",
     title: "Uber",
     companyName: "Uber Technologies",
     description:
@@ -142,7 +142,7 @@ export const appsData = [
   {
     id: 8,
     image:
-      "https://images.unsplash.com/photo-1600090846004-992214d1d02f?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1649734926695-1b1664e98842?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QW1hem9uJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D",
     title: "Amazon",
     companyName: "Amazon.com Inc.",
     description:
@@ -162,7 +162,7 @@ export const appsData = [
   {
     id: 9,
     image:
-      "https://images.unsplash.com/photo-1611987620811-9b9d9b4d1c97?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1683201681334-f25eb7658958?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TGlua2VkSW4lMjBsb2dvfGVufDB8fDB8fHww",
     title: "LinkedIn",
     companyName: "Microsoft",
     description:
@@ -182,7 +182,7 @@ export const appsData = [
   {
     id: 10,
     image:
-      "https://images.unsplash.com/photo-1616274205328-14e6b4aab214?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1683029096295-7680306aa37d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGlzY29yZCUyMGxvZ298ZW58MHx8MHx8fDA%3D",
     title: "Discord",
     companyName: "Discord Inc.",
     description:
@@ -202,7 +202,7 @@ export const appsData = [
   {
     id: 11,
     image:
-      "https://images.unsplash.com/photo-1606841837239-c5a1a8a07af7?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1637592156979-95f44c286423?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGVsZWdyYW0lMjBsb2dvfGVufDB8fDB8fHww",
     title: "Telegram",
     companyName: "Telegram FZ-LLC",
     description:
@@ -222,7 +222,7 @@ export const appsData = [
   {
     id: 12,
     image:
-      "https://images.unsplash.com/photo-1617633147537-191e64c0fc4b?w=400&h=400&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1682310071124-33632135b2ee?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8R29vZ2xlJTIwTWFwcyUyMGxvZ298ZW58MHx8MHx8fDA%3D",
     title: "Google Maps",
     companyName: "Google",
     description:
@@ -242,7 +242,7 @@ export const appsData = [
   {
     id: 13,
     image:
-      "https://images.unsplash.com/photo-1607083206968-13f3920ba313?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1636044594149-6e2f289c3868?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGludGVyZXN0JTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D",
     title: "Pinterest",
     companyName: "Pinterest Inc.",
     description:
@@ -262,7 +262,7 @@ export const appsData = [
   {
     id: 14,
     image:
-      "https://images.unsplash.com/photo-1611589437281-460bfbe1220a?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1649180559928-91d16a63bd39?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U2xhY2slMjBsb2dvfGVufDB8fDB8fHww",
     title: "Slack",
     companyName: "Slack Technologies",
     description: "Slack is a messaging platform for teams and businesses.",
@@ -281,7 +281,7 @@ export const appsData = [
   {
     id: 15,
     image:
-      "https://images.unsplash.com/photo-1611605698323-8d8b94cabf87?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1646627928839-3b59b11cd461?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RHJpYmJibGUlMjBsb2dvfGVufDB8fDB8fHww",
     title: "Dribbble",
     companyName: "Dribbble Inc.",
     description:
@@ -301,7 +301,7 @@ export const appsData = [
   {
     id: 16,
     image:
-      "https://images.unsplash.com/photo-1617633147537-191e64c0fc4b?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1658204212985-e0126040f88f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RmlnbWElMjBsb2dvfGVufDB8fDB8fHww",
     title: "Figma",
     companyName: "Figma Inc.",
     description:

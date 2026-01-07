@@ -34,13 +34,13 @@ const HomePage = () => {
           </p>
           <div className="flex gap-3 sm:gap-4 justify-center flex-wrap">
             <button
-              className="px-6 sm:px-8 py-2.5 sm:py-3 bg-white text-indigo-600 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base"
+              className="px-6 sm:px-8 py-2.5 sm:py-3 bg-white text-indigo-600 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base m-2"
               onClick={handleAppStoreClick}
             >
               🍎 App Store
             </button>
             <button
-              className="px-6 sm:px-8 py-2.5 sm:py-3 bg-white text-indigo-600 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base"
+              className="px-6 sm:px-8 py-2.5 sm:py-3 bg-white text-indigo-600 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-sm sm:text-base mr-2"
               onClick={handlePlayStoreClick}
             >
               🤖 Play Store
@@ -52,7 +52,7 @@ const HomePage = () => {
       {/* Stats Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6">
             {[
               {
                 icon: "📱",
